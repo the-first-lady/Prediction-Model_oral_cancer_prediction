@@ -1,6 +1,3 @@
-# Prediction-Model_oral_cancer_prediction
-
-```markdown
 # 🧠 Prediction-Model_oral_cancer_prediction
 
 A machine learning project dedicated to early oral cancer detection using patient data.
@@ -139,4 +136,5 @@ We welcome contributions to enhance this project! To contribute, please follow t
 ## 📄 License Information
 
 This project is currently **unlicensed**. This means that while you are free to fork and modify it for personal use, there are no explicit permissions or restrictions regarding distribution, commercial use, or further modification. Please be aware of the implications of using unlicensed software.
-```
+
+© 2024 the-first-lady. All rights reserved.
