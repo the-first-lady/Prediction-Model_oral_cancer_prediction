@@ -1,58 +1,30 @@
-# Oral Cancer Prediction Model
+# 🧠 Prediction-Model_oral_cancer_prediction
 
-## Ringkasan Proyek
-Proyek ini bertujuan untuk membangun model prediktif dalam mendiagnosis kanker mulut menggunakan data pasien. Dua algoritma pembelajaran mesin digunakan dalam proyek ini: Logistic Regression dan Random Forest. Dataset mencakup faktor risiko, gejala, dan informasi pengobatan untuk mendukung deteksi dini dan pengambilan keputusan dalam perawatan kanker.
+A machine learning project dedicated to early oral cancer detection using patient data.
 
-## Fitur Utama
-- **Model Prediksi:** Menggunakan Logistic Regression dan Random Forest untuk klasifikasi.
-- **Analisis Feature Importance:** Mengidentifikasi faktor-faktor yang paling memengaruhi prediksi (khusus untuk Random Forest).
-- **Metode Evaluasi:** Evaluasi kinerja model secara menyeluruh menggunakan precision, recall, F1-score, dan akurasi.
-- **Visualisasi:** Menyertakan plot feature importance untuk interpretasi lebih baik (hanya pada Random Forest).
+![Version](https://img.shields.io/badge/version-1.0.0-blue)
+![License](https://img.shields.io/badge/license-None-lightgrey)
+![Stars](https://img.shields.io/github/stars/the-first-lady/Prediction-Model_oral_cancer_prediction?style=social)
+![Forks](https://img.shields.io/github/forks/the-first-lady/Prediction-Model_oral_cancer_prediction?style=social)
 
-## Deskripsi Dataset
-Dataset ini mencakup data global tentang kanker mulut, dengan fokus pada:
-- **Demografi:** Usia, jenis kelamin, dan negara.
-- **Faktor Risiko:** Penggunaan tembakau, konsumsi alkohol, infeksi HPV, dan penggunaan pinang.
-- **Gejala:** Ukuran tumor, kesulitan menelan, lesi mulut, dan perdarahan yang tidak dijelaskan.
-- **Detail Pengobatan:** Jenis pengobatan dan biaya terkait.
-- **Hasil:** Tingkat kelangsungan hidup dan beban ekonomi.
+![Project Preview Image](/preview_example.png)
 
-### Kolom
-- Demografi: `Usia`, `Negara`, `Jenis Kelamin`
-- Faktor Risiko: `Penggunaan Tembakau`, `Konsumsi Alkohol`, `Infeksi HPV`, `Penggunaan Pinang`
-- Gejala: `Ukuran Tumor`, `Stadium Kanker`, `Lesi Putih atau Merah di Mulut`
-- Target: `Diagnosa Kanker Mulut`
+## ✨ Features
 
-## Alur Proyek
-### 1. Pra-pemrosesan Data
-- Membersihkan data dan menangani nilai yang hilang.
-- Encoding variabel kategorikal dan standarisasi fitur numerik.
+*   📊 **Data-Driven Diagnostics**: Leverages comprehensive patient data including risk factors, symptoms, and treatment information for accurate predictions.
+*   🤖 **Dual Model Approach**: Implements both Logistic Regression and Random Forest algorithms for robust model comparison and performance evaluation.
+*   🎯 **Early Detection Focus**: Designed to support early diagnosis of oral cancer, enabling timely intervention and improved patient outcomes.
+*   📈 **Performance Evaluation**: Includes metrics and visualizations to assess model accuracy, precision, recall, and F1-score.
+*   🧪 **Reproducible Analysis**: Provided as a Jupyter Notebook for easy execution, modification, and exploration of the predictive models.
 
-### 2. Pembangunan Model
-- **Algoritma:**
-  - Logistic Regression: Sebagai model baseline untuk klasifikasi.
-  - Random Forest: Sebagai model yang lebih kompleks dengan kemampuan untuk menghitung feature importance.
-- **Tuning Hyperparameter:** 
-  - Logistic Regression: Parameter seperti `penalty` dan `C`.
-  - Random Forest: Parameter seperti `max_depth`, `n_estimators`, dan `min_samples_split`.
+## ⚙️ Installation Guide
 
-### 3. Analisis Feature Importance (Random Forest)
-- Menggunakan fungsi `mean_score_decrease` untuk menganalisis feature importance.
-- Visualisasi fitur-fitur yang paling penting.
+Follow these steps to set up and run the project locally.
 
-### 4. Evaluasi Model
-- Menggunakan metrik: Precision, Recall, F1-score, dan Akurasi.
-- Laporan dihasilkan untuk kedua algoritma menggunakan fungsi `classification_report` dari sklearn.
+### 1. Clone the Repository
 
-### Contoh Insight dari Feature Importance (Random Forest)
-1. **Stadium Kanker:** Memberikan kontribusi ~45.3%, menekankan pentingnya deteksi dini dan penentuan stadium.
-2. **Tanpa Pengobatan:** Mengindikasikan hasil yang signifikan untuk pasien tanpa pengobatan (~32%).
-3. **Faktor Risiko:** Pengaruh sedang dari jenis pengobatan seperti pembedahan, radiasi, dan kemoterapi.
+First, clone the project repository to your local machine:
 
-## Hasil
-- **Kinerja Model:**
-  - Logistic Regression: Memberikan baseline performa dengan hasil evaluasi yang memadai.
-  - Random Forest: Mencapai akurasi 100% pada data uji, namun validasi lebih lanjut disarankan menggunakan dataset eksternal.
-- **Feature Importance (khusus Random Forest):** Memvisualisasi faktor terpenting untuk interpretasi model yang lebih baik.
-
-
+```bash
+git clone https://github.com/the-first-lady/Prediction-Model_oral_cancer_prediction.git
+cd Prediction-Model_oral_cancer_prediction
